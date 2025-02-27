@@ -5,7 +5,7 @@ def add_guests(guest: str, number: int):
     while True:
         invited=[]
         counter=0
-        if counter<number:
+        if counter<number: #we want to make sure that thenumber of guests is no more than he one chosen by the guest
             invited.append(guest)
             counter+=1
         else:
@@ -13,8 +13,10 @@ def add_guests(guest: str, number: int):
         return invited
     
 #function to print out invitations
-
-
+def invitations(invited:list):
+    for guest in invited:
+        print(f'dear{guest}, you are invited to my birthday dinner this Sunday')
+        
 #ask the user if they want to change a guest
 
 
